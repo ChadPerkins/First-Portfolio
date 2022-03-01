@@ -1,0 +1,16 @@
+:root {
+    font-size: 16px;
+    font-family: "Open Sans";
+    --text-primary: #6b6b6b;
+    --text-seconsary: #ececec;
+    --bg-primary: #a2a2af;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms
+}
+  
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}

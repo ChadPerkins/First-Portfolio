@@ -1,0 +1,145 @@
+.navbar {
+    position: fixed;
+    background-color: rgb(207, 207, 214);
+    transition: width 600ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text {
+    color: #b700ff;
+    margin-left: 1rem;
+    opacity: 0;
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    /* margin-bottom: 0.5rem; */
+    text-align: center;
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo-text
+{
+    color: #f1eff1;
+    display: inline;
+    position: absolute;
+    left: -175px;
+    opacity: 1;
+}
+
+.logo-svg {
+    color: #f1eff1;
+    font-size: 2rem;
+    min-width: 2rem;
+    margin: 0 1rem;
+    
+    transform: rotate(0deg);
+    transition: var(--transition-speed);
+}
+.svg {
+    color: #b700ff;
+    font-size: 2rem;
+    min-width: 2rem;
+    margin: 0 1rem;
+    
+}
+
+.navbar:hover .logo-svg {
+    transform: rotate(-180deg);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+    }
+    
+    .logo {
+        display: none;
+    }
+  
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .nav-link {
+        justify-content: center;
+    }
+  
+    main {
+      margin: 0;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+    .navbar {
+        top: 0;
+        width: 4rem;
+        height: 100vh;
+    }
+    
+    .navbar:hover {
+        width: 14.5rem;
+    }
+  
+    .navbar:hover .link-text {
+      display: inline;
+      opacity: 1;
+      transition-property: opacity;
+      transition-delay: 100ms;
+    }
+    
+    .navbar:hover .logo svg
+    {
+        margin-left: 11rem;
+    }
+  
+    .navbar:hover .logo-text
+    {
+        left: 1rem;
+        transition-property: left;
+        transition-timing-function: linear;
+        transition-duration: 400ms;
+    }
+}
+
