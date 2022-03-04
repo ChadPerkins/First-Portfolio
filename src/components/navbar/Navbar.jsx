@@ -1,20 +1,20 @@
 import React from 'react'
 import { IconContext } from "react-icons";
 import { BsArrowsMove } from "react-icons/bs";
-import {  FaHome } from 'react-icons/fa'
+import {  FaGithub, FaHome, FaLinkedin } from 'react-icons/fa'
 import { VscProject } from "react-icons/vsc"
 import { IoIosContact } from "react-icons/io"
 import { Link } from 'react-router-dom'
-
+ 
 import './Navbar.css'
 
 function Header() {
   return (
     <nav className="navbar">
       <ul className='navbar-nav'>
-        <li class="logo">
+        <li className="logo">
           <Link className='nav-link' to='/'>
-            <span class="logo-text">Navigate</span>
+            <span className="logo-text">Navigate</span>
             <IconContext.Provider value={{ className: 'logo-svg'}}>
               <BsArrowsMove />
             </IconContext.Provider>
@@ -44,6 +44,22 @@ function Header() {
           <span className='link-text'>Contact</span>
           </Link>
         </li>
+        <div className="social-list">
+        <li className='nav-item'>
+          <a className='nav-link' href="https://github.com/ChadPerkins">
+            <IconContext.Provider value={{ className: 'svg'}}>
+              <FaGithub />
+            </IconContext.Provider>
+          </a>
+        </li>
+        <li className='nav-item'>
+          <a className='nav-link' href="https://www.linkedin.com/in/chad-perkins-259307231/">
+            <IconContext.Provider value={{ className: 'svg'}}>
+              <FaLinkedin />
+            </IconContext.Provider>
+          </a>
+        </li>
+        </div>
       </ul>
     </nav>
   )

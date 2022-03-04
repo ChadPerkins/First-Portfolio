@@ -1,6 +1,6 @@
 .navbar {
     position: fixed;
-    background-color: rgb(207, 207, 214);
+    background-color: rgba(207, 207, 214, 0.9);
     transition: width 600ms ease;
 }
 
@@ -16,10 +16,6 @@
 
 .nav-item {
     width: 100%;
-}
-
-.nav-item:last-child {
-    margin-top: auto;
 }
 
 .nav-link {
@@ -62,6 +58,7 @@
     position: absolute;
     left: -175px;
     opacity: 1;
+    transition: 400ms;
 }
 
 .logo-svg {
@@ -79,6 +76,18 @@
     min-width: 2rem;
     margin: 0 1rem;
     
+}
+
+.social-list{
+    display: flex;
+    margin-top: auto;
+}
+
+.social-list .svg {
+    font-size: 1.5rem;
+    min-width: 1rem;
+    margin: 0 0.2rem;
+    transition: 400ms;
 }
 
 .navbar:hover .logo-svg {
@@ -105,9 +114,10 @@
         justify-content: center;
     }
   
-    main {
-      margin: 0;
+    .social-list, .link-text{
+        display: none;
     }
+    
 }
 
 /* Large screens */
@@ -141,5 +151,14 @@
         transition-timing-function: linear;
         transition-duration: 400ms;
     }
+
+    .navbar:hover .social-list .svg {
+        font-size: 2rem;
+        min-width: 2rem;
+        margin: 0 1rem;
+        transition: font-size 400ms, min-width 400ms, margin 400ms;
+    }
+
+    
 }
 
