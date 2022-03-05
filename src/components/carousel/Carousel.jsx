@@ -13,9 +13,9 @@ function Carousel() {
         <>
         <div className="carousel-container">
             <div className="carousel-slide">
-                <div className="nav-link">
+                <div className="project-nav">
                             <BsFillArrowLeftCircleFill
-                                className='project-svg'
+                                className='nav-svg'
                                 onClick={() => {
                                     if(activeSlide > 0) {
                                         setActiveSlide(activeSlide - 1)
@@ -26,21 +26,21 @@ function Carousel() {
                             />
                 </div>
                 <div className="carousel-card">
-                    <h1>{projects[activeSlide].title}</h1>
+                    <h2>{projects[activeSlide].title}</h2>
                     <img src={projects[activeSlide].img} alt="project" />
                     <p>{projects[activeSlide].description}</p>
                     <div className='project-links'>
-                        <a className='nav-link' href={projects[activeSlide].github}>
-                            <AiFillCode className='project-svg'/>
+                        <a className='project-svg' href={projects[activeSlide].github}>
+                            <AiFillCode/>
                         </a>
-                        <a className='nav-link' href={projects[activeSlide].url}>
-                            <MdPageview className='project-svg'/>
+                        <a className='project-svg' href={projects[activeSlide].url}>
+                            <MdPageview />
                         </a>
                     </div>
                 </div>
-                <div className="nav-link">
+                <div className="project-nav">
                     <BsFillArrowRightCircleFill
-                        className='project-svg'
+                        className='nav-svg'
                         onClick={() => {
                             if(activeSlide > 0) {
                                 setActiveSlide(activeSlide - 1)
