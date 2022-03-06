@@ -88,9 +88,9 @@
         color: #f1eff1;
         display: inline;
         position: absolute;
-        left: -175px;
-        opacity: 1;
+        left: -150px;
         transition: 400ms;
+        white-space: pre-wrap;
     }
     
     .logo-svg {
@@ -131,9 +131,9 @@
   
     .navbar:hover .logo-text
     {
-        left: 1rem;
+        left: 2rem;
         transition-property: left;
-        transition-timing-function: linear;
+        transition-timing-function: ease-in-out;
         transition-duration: 400ms;
     }
 

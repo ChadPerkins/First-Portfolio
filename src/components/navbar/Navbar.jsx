@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom'
  
 import './Navbar.css'
 
-function Header() {
+function Navbar() {
   return (
     <nav className="navbar">
       <ul className='navbar-nav'>
         <li className="logo">
           <Link className='nav-link' to='/'>
-            <span className="logo-text">Navigate</span>
+            <span className="logo-text">{`Chad\nPerkins`}</span>
             <IconContext.Provider value={{ className: 'logo-svg'}}>
               <BsArrowsMove />
             </IconContext.Provider>
@@ -65,4 +65,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Navbar

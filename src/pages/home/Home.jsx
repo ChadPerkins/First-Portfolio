@@ -1,4 +1,4 @@
-import React from 'react'
+import myPic from '../../imgs/chadperkins.jpg'
 import './Home.css'
 
 
@@ -8,6 +8,7 @@ function Home() {
         <main>
             <div className='name-and-pic'>
                 <h1>&#60;Chad Perkins &#47;&#62;</h1>
+                <img src={myPic} alt="Me" />
             </div>
             <div className="about-me">
                 <p>
@@ -19,5 +20,5 @@ function Home() {
     </> 
   )
 }
-
+ 
 export default Home

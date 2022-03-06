@@ -1,5 +1,4 @@
 import YelpCamp1 from '../../imgs/yelpcamp1.png'
-import YelpCamp3 from '../../imgs/yelpcamp3.png'
 import YtClone1 from '../../imgs/ytclone1.png'
 
 export const projects = [{
@@ -11,7 +10,7 @@ export const projects = [{
 },
 {
     title: "YouTube-Clone",
-    description: "This is a project connecting to the Youtube API. It is used for searching and displaying videos as well as comments from the parent videos. It is built using the React framework.",
+    description: "This is a project connecting to the Youtube API. It is used for searching and displaying videos as well as comments from the parent video. It is built using the React framework.",
     img: YtClone1,
     github: 'https://github.com/ChadPerkins/Youtube-Clone',
     url: 'https://youtube-clone-eight-steel.vercel.app/'
