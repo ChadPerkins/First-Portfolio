@@ -8,8 +8,8 @@ import './Projects.css'
 function Projects() {
   return (
     <>
-        <main>
-          <h1>&#60;Projects &#47;&#62;</h1>
+        <main className="project-main">
+          <h1 className="project-header">&#60;Projects &#47;&#62;</h1>
           <Carousel/>
           <div className="skill-list">
             <h2>&#60;Skills &#47;&#62;</h2>

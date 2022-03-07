@@ -4,12 +4,14 @@
 }
 
 .carousel-container {
+    margin-left: 4rem;
+    margin-right: 4rem;
     border: 5px solid black;
 }
 
 .carousel-slide{
     display: flex;
-    background-color: rgb(207, 207, 214);
+    background-color: var(--bg-primary);
     height: auto; 
 }
 
@@ -18,7 +20,7 @@
 }
 
 .nav-svg, .project-svg {
-    color: rgb(107, 107, 114);
+    color: rgb(81, 81, 87);
     font-size: 2rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;

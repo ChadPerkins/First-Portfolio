@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'
+
+
 import myPic from '../../imgs/chadperkins.jpg'
 import './Home.css'
 
@@ -12,9 +15,11 @@ function Home() {
             </div>
             <div className="about-me">
                 <p>
-                    I am a hard working, dedicated self taught software developer who is always studying and learning something new.
-                    I believe we should end our day a little smarter then we started. I am currently located in Ashland, VA.
+                    I am a self taught software developer who specializes in creating modern responsive websites. I am currently located in Ashland, VA.
                 </p>
+            <Link className='contact-link' to='/contact'>
+                <button>Get In Touch</button>
+            </Link>
             </div>
         </main>
     </> 

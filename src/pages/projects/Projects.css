@@ -1,10 +1,10 @@
-main {
+.project-main {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1 {
+.project-header {
   padding-top: 1rem;
   padding-bottom:3rem;
   text-align: center;
@@ -12,15 +12,21 @@ h1 {
 
 .skill-list h2 {
   padding-top: 1rem;
-  padding-bottom:1rem;
+  padding-bottom:1rem;  
   text-align: center;
+}
+
+.skill-list{
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .skill-icons {
   padding-top: 1rem;
   font-size: 4rem;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
 }
 
 /* Small screens */
