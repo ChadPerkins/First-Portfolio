@@ -9,10 +9,10 @@ function Projects() {
   return (
     <>
         <main className="project-main">
-          <h1 className="project-header">&#60;Projects &#47;&#62;</h1>
+          <h1 className="project-header">&#60;PROJECTS&#47;&#62;</h1>
           <Carousel/>
           <div className="skill-list">
-            <h2>&#60;Skills &#47;&#62;</h2>
+            <h2>&#60;Skills&#47;&#62;</h2>
             <p>These are skills I have learned and used through different projects:</p>
             <div className="skill-icons">
               <DiHtml5/> <DiCss3/> <IoLogoJavascript/>

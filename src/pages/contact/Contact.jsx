@@ -1,11 +1,13 @@
-import ContactForm from '../../components/ContactForm/ContactForm'
+import ContactForm from "../../components/ContactForm/ContactForm";
+
+import "./Contact.css";
 
 function Contact() {
   return (
     <>
-      <ContactForm/>
+      <ContactForm />
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

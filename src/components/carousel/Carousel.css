@@ -6,12 +6,12 @@
 .carousel-container {
     margin-left: 4rem;
     margin-right: 4rem;
-    border: 5px solid black;
+    border: 5px solid var(--bg-primary);
 }
 
 .carousel-slide{
     display: flex;
-    background-color: var(--bg-primary);
+    background-color: var(--bg-seconadry);
     height: auto; 
 }
 
@@ -20,14 +20,14 @@
 }
 
 .nav-svg, .project-svg {
-    color: rgb(81, 81, 87);
+    color: var(--bg-primary);
     font-size: 2rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 }
 
 .nav-svg:hover, .project-svg:hover {
-    color: black;
+    color: var(--text-primary);
 }
 
 .project-links {
@@ -41,6 +41,7 @@
 }
 
 .carousel-card h2 {
+    font: 300 40px "Oswald", sans-serif;
     text-align: center;
 }
 

@@ -4,9 +4,14 @@
   flex-direction: column;
   
 }
-
+.name-and-pic h1{
+  padding-top: 1rem;
+  font: 300 60px "Oswald", sans-serif;
+}
 .name-and-pic img {
   height: auto;
+  max-height: 350px;
+  max-width: 300px;
   width: 25%;
   border-radius: 50%;
 }
@@ -14,7 +19,22 @@
 .about-me {
   margin-left: 20%;
   margin-right: 20%;
+  margin-top: 1rem;
   text-align: center;
+  
+}
+
+.contact-link {
+  font-size: 1rem;
+  border: 5px solid rgba(328, 328, 350, 0.5);
+  border-radius: 12px;
+  margin-top: 1rem;
+  background-color: var(--bg-primary);
+
+}
+
+.contact-link:hover {
+  border: 5px solid var(--bg-secondary);
 }
 
 
@@ -27,6 +47,7 @@
   }
   
   .name-and-pic {
+    text-align: center;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }

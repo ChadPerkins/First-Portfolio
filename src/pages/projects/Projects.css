@@ -5,12 +5,14 @@
 }
 
 .project-header {
+  font: 300 60px "Oswald", sans-serif;
   padding-top: 1rem;
   padding-bottom:3rem;
   text-align: center;
 }
 
 .skill-list h2 {
+  font: 300 40px "Oswald", sans-serif;
   padding-top: 1rem;
   padding-bottom:1rem;  
   text-align: center;
@@ -22,10 +24,12 @@
 }
 
 .skill-icons {
+  color: var(--text-primary);
   padding-top: 1rem;
   font-size: 4rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  row-gap: 1rem;
   justify-items: center;
 }
 

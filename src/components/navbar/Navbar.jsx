@@ -13,12 +13,12 @@ function Navbar() {
     <nav className="navbar">
       <ul className='navbar-nav'>
         <li className="logo">
-          <Link className='nav-link' to='/'>
+          <div className="logo-header">
             <span className="logo-text">{`Chad\nPerkins`}</span>
             <IconContext.Provider value={{ className: 'logo-svg'}}>
               <BsArrowsMove />
             </IconContext.Provider>
-          </Link>
+          </div>
         </li>  
         <li className='nav-item'>
           <Link className='nav-link' to='/'>
