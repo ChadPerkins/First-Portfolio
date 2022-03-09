@@ -1,3 +1,11 @@
+.home-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
 .name-and-pic {
   display: flex;
   align-items: center;
@@ -17,8 +25,6 @@
 }
 
 .about-me {
-  margin-left: 20%;
-  margin-right: 20%;
   margin-top: 1rem;
   text-align: center;
   
@@ -26,7 +32,7 @@
 
 .contact-link {
   font-size: 1rem;
-  border: 5px solid rgba(328, 328, 350, 0.5);
+  border: 4/5px solid rgba(328, 328, 350, 0.5);
   border-radius: 12px;
   margin-top: 1rem;
   background-color: var(--bg-primary);
@@ -34,7 +40,9 @@
 }
 
 .contact-link:hover {
-  border: 5px solid var(--bg-secondary);
+  border: solid var(--bg-secondary);
+  color: var(--text-primary);
+
 }
 
 

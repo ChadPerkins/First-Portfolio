@@ -8,7 +8,7 @@ import './Projects.css'
 function Projects() {
   return (
     <>
-        <main className="project-main">
+        <section className="project-section">
           <h1 className="project-header">&#60;PROJECTS&#47;&#62;</h1>
           <Carousel/>
           <div className="skill-list">
@@ -19,7 +19,7 @@ function Projects() {
               <SiReact/> <IoLogoNodejs/> <SiExpress/> <SiMongodb/>
             </div>
           </div>
-        </main>
+        </section>
     </>
   )
 }

@@ -43,51 +43,53 @@ function ContactForm() {
             </li>
           </ul>
           <hr />
-         
         </div>
-        <form id="contact-form" class="form-horizontal" role="form">
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="NAME"
-                name="name"
-                value=""
-                required
-              />
+
+        <div className="contact-form">
+          <form id="contact-form" class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="NAME"
+                  name="name"
+                  value=""
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div class="col-sm-12">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="EMAIL"
-                name="email"
-                value=""
-                required
-              />
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="EMAIL"
+                  name="email"
+                  value=""
+                  required
+                />
+              </div>
             </div>
-          </div>
-          <textarea
-            class="form-control"
-            rows="10"
-            placeholder="MESSAGE"
-            name="message"
-            required
-          ></textarea>
-          <button
-            class="btn btn-primary send-button"
-            id="submit"
-            type="submit"
-            value="SEND"
-          >
-            <span class="send-text">SEND</span>
-          </button>
-        </form>
+            <textarea
+              class="form-control"
+              rows="10"
+              placeholder="MESSAGE"
+              name="message"
+              required
+            ></textarea>
+            <button
+              class="btn btn-primary send-button"
+              id="submit"
+              type="submit"
+              value="SEND"
+            >
+              <span class="send-text">SEND</span>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
   );
