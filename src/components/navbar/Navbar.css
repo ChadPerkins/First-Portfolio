@@ -103,7 +103,7 @@
         min-width: 2rem;
         margin: 0 1rem;
         transform: rotate(0deg);
-        transition: var(--transition-speed);
+        transition: 600ms;
     }
     
     .link-text {
