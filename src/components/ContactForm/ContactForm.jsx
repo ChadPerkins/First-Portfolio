@@ -46,7 +46,13 @@ function ContactForm() {
         </div>
 
         <div className="contact-form">
-          <form id="contact-form" class="form-horizontal" role="form">
+        <form
+            className="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+        >
+            <input type="hidden" name="form-name" value="contact" />
             <div class="form-group">
               <div class="col-sm-12">
                 <input
@@ -55,7 +61,6 @@ function ContactForm() {
                   id="name"
                   placeholder="NAME"
                   name="name"
-                  value=""
                   required
                 />
               </div>
@@ -68,7 +73,6 @@ function ContactForm() {
                   id="email"
                   placeholder="EMAIL"
                   name="email"
-                  value=""
                   required
                 />
               </div>
